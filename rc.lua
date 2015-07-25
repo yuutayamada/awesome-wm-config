@@ -28,3 +28,5 @@ run_once("ibus-daemon", "--xim") -- ibus
 -- Start XTerm automatically
 run_once("xrdb", "$XDG_CONFIG_HOME/X11/XTerm")
 run_once("xterm")
+-- f.lux
+run_once("fluxgui")
