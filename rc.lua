@@ -28,3 +28,6 @@ run_once("xrdb", "-merge $XDG_CONFIG_HOME/X11/URxvt")
 run_once("urxvtd", "-q -o -f && urxvtc")
 -- f.lux
 run_once("fluxgui")
+
+-- xmodmap & xcape
+run_once("$HOME/code/shellscript/setxcape")
