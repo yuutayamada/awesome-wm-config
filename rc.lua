@@ -29,5 +29,8 @@ run_once("urxvtd", "-q -o -f && urxvtc")
 -- f.lux
 run_once("fluxgui")
 
+-- bluetooth
+run_once("blueman-applet")
+
 -- xmodmap & xcape
 run_once("$HOME/code/shellscript/setxcape")
