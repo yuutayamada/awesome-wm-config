@@ -21,13 +21,13 @@ require('awesome_default')
 -- Autostart script
 run_once("nm-applet") -- networking
 run_once("xsetroot", "-cursor_name left_ptr")  -- sets the cursor icon
-run_once("redshift", "-o -l 0:0 -b 0.8 -t 6500:6500") -- brightness
+
+-- brightness control like f.lux
+run_once("redshift", "-o -l 0:0 -b 0.8 -t 5500:3700") -- brightness
 
 -- Start XTerm automatically
 run_once("xrdb", "-merge $XDG_CONFIG_HOME/X11/URxvt")
 run_once("urxvtd", "-q -o -f && urxvtc")
--- f.lux
-run_once("fluxgui")
 
 -- bluetooth
 run_once("blueman-applet")
