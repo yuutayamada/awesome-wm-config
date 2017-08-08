@@ -63,7 +63,7 @@ end
 -----------------------
 -- change background --
 -----------------------
-function change_bg()
+function change_bg(wallpaper_dir, wallpaper_cmd)
   if whereis_app('feh') then
     mytimer = timer { timeout = 0 }
     mytimer:connect_signal("timeout",

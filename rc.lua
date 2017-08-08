@@ -34,3 +34,11 @@ run_once("blueman-applet")
 
 -- xmodmap & xcape
 run_once("$HOME/code/shellscript/setxcape")
+
+-- Change background randomly
+local wallpaper_dir = os.getenv("HOME") .. "/media/pictures/wallpaper/1920x1280"
+local wallpaper_cmd = "find " .. wallpaper_dir .. " -type f -name '*.jpg'  -print0 | shuf -n1 -z | xargs -0 feh --bg-scale"
+change_bg(wallpaper_dir, wallpaper_cmd)
+
+-- For testing wallpaper
+-- beautiful.wallpaper = wallpaper_dir .. "/cubes.jpg"
