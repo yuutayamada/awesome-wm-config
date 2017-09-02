@@ -32,8 +32,8 @@ run_once("urxvtd", "-q -o -f && urxvtc")
 -- bluetooth
 run_once("blueman-applet")
 
--- xmodmap & xcape
-run_once("$HOME/code/shellscript/setxcape")
+-- brightness
+run_once("xrandr --output eDP-1 --brightness 0.4")
 
 -- Change background randomly
 local wallpaper_dir = os.getenv("HOME") .. "/media/pictures/wallpaper/1920x1280"
